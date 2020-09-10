@@ -1,0 +1,39 @@
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <body>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no">
+   <br><br>
+      <form action = "http://ec2-13-235-31-67.ap-south-1.compute.amazonaws.com:5000/timetable" method = "POST" align = "center">
+         <p><label for="Day">Select Day :&nbsp;&nbsp;</label>
+	  <select id="Day" name="Day" class="btn btn-secondary btn-sm dropdown-toggle">
+	    <option value="Monday">Monday</option>
+	    <option value="Tuesday">Tuesday</option>
+	    <option value="Wednesday">Wednesday</option>
+	    <option value="Thursday">Thursday</option>
+	    <option value="Friday">Friday</option>
+	  </select></p>
+         <p>Lecture Number : &nbsp;&nbsp;  <input type="radio" id="1" name="Number" value="1">
+	  <label for="1">1</label>
+	  <input type="radio" id="2" name="Number" value="2">
+	  <label for="2">2</label>
+	  <input type="radio" id="3" name="Number" value="3">
+	  <label for="3">3</label>
+	  <input type="radio" id="4" name="Number" value="4">
+	  <label for="4">4</label>
+	  <input type="radio" id="5" name="Number" value="5">
+	  <label for="5">5</label></p>
+	  <p><label for="Subject Code">Subject Code :&nbsp;&nbsp;</label>
+	  <select id="Code" name="Code" class="btn btn-secondary btn-sm dropdown-toggle">
+	    <option value="NULL">None</option>
+	    <option value="17YCI501">FLAT&nbsp;&nbsp;&nbsp;&nbsp;(17YCI501)</option>
+	    <option value="17YCI502">OS&nbsp;&nbsp;&nbsp;&nbsp;(17YCI502)</option>
+	    <option value="17YCI503">ETIoT&nbsp;&nbsp;&nbsp;&nbsp;(17YCI503)</option>
+	    <option value="17YCI504">CAD&nbsp;&nbsp;&nbsp;&nbsp;(17YCI504)</option>
+	    <option value="17YCI505">CN&nbsp;&nbsp;&nbsp;&nbsp;(17YCI505)</option>
+	    <option value="17YCI511">ETIoT Lab&nbsp;&nbsp;(17YCI511)</option>
+	    <option value="17YCI512">CAD Lab&nbsp;&nbsp;&nbsp;&nbsp;(17YCI512)</option>
+	  </select></p>
+         <p><input type = "submit" class="btn btn-primary" value = "submit" /></p>
+         </form>
+   </body>
+</html>
